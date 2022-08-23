@@ -1,0 +1,17 @@
+.formInfo{
+    margin:5em;
+    padding: 1em;
+    background-color: rgb(255, 239, 219);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formResults{
+    background-color: blanchedalmond;
+    margin:5em;
+    padding: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+li{
+    list-style: none;
+}

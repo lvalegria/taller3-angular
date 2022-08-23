@@ -1,0 +1,65 @@
+<div class="formInfo">
+<form
+[formGroup]="personasForm"
+(ngSubmit)="createPersona(personasForm)"
+>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div class="mb-3">
+      <label for="nombre" class="form-label text-secondary fw-bold"
+        >Nombre</label
+      >
+      <input
+        class="form-control form-border"
+        type="text"
+        id="nombre"
+        formControlName="nombre"
+        name="nombre"
+        placeholder="Ej: nombre"    
+      />
+    </div>
+</div>
+
+
+    <div class="col-12 col-md-6">
+        <div class="mb-3">
+          <label for="edad" class="form-label text-secondary fw-bold"
+            >Edad</label
+          >
+          <input
+            class="form-control form-border"
+            type="text"
+            id="edad"
+            formControlName="edad"
+            name="edad"
+            placeholder="Ej: edad"    
+          />   
+        </div>
+
+    </div>
+
+    <div class="col-12"></div>
+
+    <div class="col-12 col-md-6 my-3">
+        <div class="row">  
+        <div class="col-6">
+            <button           
+            type="submit"
+            class="btn btn-success w-100 fw-bold"
+            >
+            Guardar
+            </button>
+        </div>
+        </div>
+    </div>
+    </div>
+</form>
+
+</div>
+
+<div class="formResults">
+<ul>
+  <p>Juan, 25, adulto</p>
+  <li *ngFor="let persona of personas">{{persona.nombre}}, {{persona.edad}}, {{persona.rangoedad}}</li>
+</ul>
+</div>
